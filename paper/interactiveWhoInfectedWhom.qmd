@@ -142,6 +142,13 @@ We focus on several representative questions that commonly arise when interpreti
 identifying likely sources of individual infections, examining cases for which no sampled source is strongly supported, tracing transmission involving individuals of particular interest, and exploring associations between epidemiological metadata and transmission patterns.
 <!-- could also compare different inference methods here, not sure if i want to? -->
 
+We compare transphylo and Breath runs for this
+
+### Comparing the whole Networks
+
+Networks inferred by either method with an edge threshold of 0.2 percent (this is to reduce some visual noise for these figures not because its a recommended thing to do)
+
+
 (todo show the whole network here?)
 
 ### Individual transmission histories
@@ -149,11 +156,12 @@ identifying likely sources of individual infections, examining cases for which n
 showcase case 51 and the 3 year old case
 include screenshots one for each with zoomed in of the network
 
-(todo highlighting nodes/ searching for them could be a good feature that we might want to add)
-
 ### Exploring indirect infections
 
 Since we now can have these as edges, explore that network individually and in context of the rest
+
+This can be done with the full network which includes the indirect edges in the screen shot...
+
 
 ### Exploring different metadata
 
@@ -162,15 +170,27 @@ Nodes can be colored according to variables such as sampling date, smear positiv
 This makes it possible to visually assess, for example, whether particular characteristics are concentrated among individuals with multiple inferred downstream infections.
 Such visual associations are intended primarily for exploratory analysis and should not, by themselves, be interpreted as evidence of causal relationships.
 
-(todo some screenshots of the same network or maybe zoomed in part in different colors, point out that this only requires a couple of mouse clicks and nothing else)
+focus on just direct transmissions from breath colored by
+smear positivity
+
+vs.
+
+alcohol
 
 
-<!-- (todo if we include more than breath for this we could include a section specifically comparing the different methods here...) -->
+
+We can also use the stats panel to look at the connectivity between nodes and their different metadata:
+
+Here is a comparison of the connectivity for the TP and the breath inference (direct transmissions only).
 
 
 ## Data application example 2
 
 maybe use foot and mouth outbreak that was published for at least two tools, then we can compare the results of both in one network?
+
+
+
+
 
 # Discussion
 
