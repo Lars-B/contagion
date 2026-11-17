@@ -18,6 +18,8 @@ from contagion.validators import validate_int
     Output("cytoscape", "elements"),
     Output("cytoscape", "layout"),
     Output("cytoscape", "stylesheet"),
+    Output("base-stylesheet", "data"),
+    Output("highlighted-node", "data"),
     # Inputs below
     Input("graph-store", "data"),
     Input(GraphOptions.Edges.DISPLAY_FILTER, "value"),
@@ -142,7 +144,7 @@ def update_elements(graph_data, selected_edge_labels, selected_layout,
                       )},
                  ]
 
-    return elements, layout, stylesheet
+    return elements, layout, stylesheet, stylesheet, None
 
 
 @myapp.callback(

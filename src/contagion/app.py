@@ -34,6 +34,8 @@ app.title = "CONTAGION"
 
 app.layout = html.Div([
     dcc.Store(id="graph-store"),
+    dcc.Store(id="highlighted-node"),
+    dcc.Store(id="base-stylesheet"),
     data_loading_modal,
     data_loading_modal_tp,
     data_loading_modal_outbreaker,

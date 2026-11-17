@@ -10,6 +10,7 @@ from .modal_callback_factory import make_loading_modal_callback
 from .coloring import *
 from .statistics_panel import *
 from .legend import *
+from .node_highlighting import *
 
 
 def register_callbacks(app):
