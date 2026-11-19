@@ -11,6 +11,7 @@ from .coloring import *
 from .statistics_panel import *
 from .legend import *
 from .node_highlighting import *
+from .search_function import *
 
 
 def register_callbacks(app):

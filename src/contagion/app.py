@@ -40,6 +40,19 @@ app.layout = html.Div([
     data_loading_modal_tp,
     data_loading_modal_outbreaker,
     data_loading_modal_scotti,
+    # Node search pop up
+    dcc.Store(id="search-matches"),
+    html.Div(
+        dcc.Input(
+            id="node-search",
+            type="text",
+            placeholder="Search nodes…",
+            debounce=True,
+            autoComplete="off",
+            style={"width": "280px"},
+        ),
+        id="node-search-popup",
+    ),
 
     PanelGroup(
         id="panel-group",
